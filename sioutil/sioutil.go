@@ -19,7 +19,7 @@ import (
 
 const (
 	// Version of the Package
-	Version = 0.1.1
+	Version = "0.1.1"
 )
 
 // ReadAll safely reads from 'ir' until an error or EOF and returns the data it read.

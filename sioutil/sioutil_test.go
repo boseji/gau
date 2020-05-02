@@ -8,7 +8,7 @@
 // ##
 // ####
 
-package sioutil_test
+package sioutil
 
 import (
 	"bytes"
