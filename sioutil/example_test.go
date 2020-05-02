@@ -33,7 +33,6 @@ func ExampleReadAll() {
 	fmt.Printf("%d:%s", len, s)
 
 	// Output:
-
-	//44:Go is a general-purpose language designed with systems programming in mind.
+	// 44:Go is a general-purpose language designed with systems programming in mind.
 
 }
