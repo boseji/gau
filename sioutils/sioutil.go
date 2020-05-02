@@ -8,8 +8,8 @@
 // ##
 // ####
 
-// Package sioutil implements safer alternatives to standard `io.ioutils`
-package sioutil
+// Package sioutils implements safer alternatives to standard `io.ioutil`
+package sioutils
 
 import (
 	"bytes"
@@ -19,7 +19,9 @@ import (
 
 const (
 	// Version of the Package
-	Version = "0.1.1"
+	Version = "0.1.2"
+	// Package Name
+	Package = "sioutils"
 )
 
 // ReadAll safely reads from 'ir' until an error or EOF and returns the data it read.
@@ -30,7 +32,7 @@ const (
 func ReadAll(ir io.Reader) (int64, string, error) {
 	// Avoid Panic due to nil Reader
 	if ir == nil {
-		return 0, "", fmt.Errorf("Error (sioutil.ReadAll): Reader was nil")
+		return 0, "", fmt.Errorf("Error (%s.ReadAll): Reader was nil", Package)
 	}
 	// Create a Buffer for reading data
 	// b := bytes.NewBufferString("")

@@ -8,7 +8,7 @@
 // ##
 // ####
 
-package sioutil
+package sioutils
 
 import (
 	"bytes"
@@ -78,7 +78,7 @@ func TestReadAll(t *testing.T) {
 			}
 		})
 	}
-	fmt.Println("Package Version =", Version)
+	fmt.Printf("Package %s Version = %s\n", Package, Version)
 }
 
 func BenchmarkReadAll512(b *testing.B) {

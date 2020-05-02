@@ -8,14 +8,12 @@
 // ##
 // ####
 
-package sioutil_test
+package sioutils_test
 
 import (
 	"fmt"
 	"log"
 	"strings"
-
-	"github.com/boseji/gau/sioutil"
 )
 
 func ExampleReadAll() {
