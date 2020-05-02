@@ -14,13 +14,15 @@ import (
 	"fmt"
 	"log"
 	"strings"
+
+	"github.com/boseji/gau/sioutils"
 )
 
 func ExampleReadAll() {
 
 	r := strings.NewReader("Go is a general-purpose language designed with systems programming in mind.")
 
-	len, s, err := sioutil.ReadAll(r)
+	len, s, err := sioutils.ReadAll(r)
 
 	if err != nil {
 
